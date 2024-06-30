@@ -663,19 +663,28 @@ a {
 .footer-20192 .site-section {
   padding-bottom: 6rem;
 }
+
 /** Footer **/
 
-
 /** Custom CSS **/
-.testimonial{
-    padding-bottom: 7rem !important;
+.testimonial {
+  padding-bottom: 7rem !important;
 }
-.copyright-bottom{
-    background-color:#012736;
+.copyright-bottom {
+  background-color: #012736;
 }
 /** Responsive **/
 
 @media (min-width: 1200px) {
+}
+
+@media (max-width: 576px) {
+  .footer-20192 .site-section .site-content {
+    text-align: center;
+  }
+  .footer-20192 .site-section .site-content .copyright {
+    padding: 0rem 3rem;
+  }
 }
 /** Responsive **/
 

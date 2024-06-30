@@ -1,10 +1,21 @@
 /********** Template CSS **********/
+
 :root {
-    --primary: #355EFC;
+    --primary: #009bd6;
     --secondary: #E93C05;
     --tertiary: #555555;
-    --light: #DFE4FD;
-    --dark: #011A41;
+    --light: #ffffff;
+    --dark: #00415a;
+    --darker: #001f2b;
+    
+    
+    /** Font **/
+    --font-family: 'Houschka Pro Medium';
+
+}
+
+body {
+    font-family: var(--font-family) !important;
 }
 
 .back-to-top {
@@ -39,6 +50,9 @@ h6,
     font-weight: 500 !important;
 }
 
+a{
+    color: var(--primary);
+}
 
 /*** Spinner ***/
 #spinner {
@@ -222,7 +236,7 @@ h6,
 
 /*** Facts ***/
 .facts {
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(var(--primary),var(--primary) ), url(../img/bg.png);
 }
 
 
@@ -238,7 +252,7 @@ h6,
     height: 50%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgba(53, 94, 252, .95), rgba(53, 94, 252, .95)), url(../img/bg.png);
+    background: linear-gradient(var(--primary), var(--primary)), url(../img/bg.png);
     z-index: -1;
 }
 
@@ -529,7 +543,7 @@ h6,
 
 .copyright {
     color: var(--light);
-    background: #000B1C;
+    background: var(--darker);
 }
 
 .copyright a {
@@ -539,3 +553,52 @@ h6,
 .copyright a:hover {
     color: var(--primary);
 }
+
+
+/*** Bootstrap Overrride ***/
+
+.display-1{
+    font-size: calc(1.625rem + 2vw);
+}
+.text-primary {
+    color: var(--primary) !important;
+}
+.btn-primary {
+    color: var(--light);
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+    color: var(--primary);
+    background: var(--dark);
+    border-color: var(--dark);
+}
+.btn-primary:hover, .btn-primary:focus,.btn-primary:focus-visible,.btn-primary:focus-within{
+    color: var(--light);
+    background: var(--dark);
+    border-color: var(--dark);
+}
+
+.bg-dark {
+    background: var(--dark) !important;
+}
+
+.fs-5 {
+    font-size: 1rem !important;
+}
+.display-4 {
+    font-size: 2rem;
+}
+
+
+
+/** Responsive **/
+
+@media (min-width: 1200px) {
+  
+   
+}
+/** Responsive **/
+
+/*** Bootstrap Overrride ***/

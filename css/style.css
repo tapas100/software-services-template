@@ -678,6 +678,9 @@ a {
 .copyright-bottom-text{
     color: var(--light-gray);
 }
+.social-icons{
+  text-align: end;
+}
 /** Responsive **/
 
 @media (min-width: 1200px) {
@@ -687,6 +690,7 @@ a {
   .footer-20192 .site-section .site-content {
     text-align: center;
   }
+ 
   .footer-20192 .site-section .site-content .copyright {
     padding: 0rem 3rem;
   }
